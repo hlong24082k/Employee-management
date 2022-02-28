@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="logo-buffer"></ion-icon></span>
+                        <span class="tittle">BK Technology</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" >
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="tittle">Thông tin</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index-nhansu.html">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="tittle">Nhân sự</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index-phongban.html">
+                        <span class="icon"><ion-icon name="server-outline"></ion-icon></span>
+                        <span class="tittle">Phòng ban</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/login.html">
+                        <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                        <span class="tittle">Đăng xuất</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Thong tin-->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="tìm kiếm">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                
+                <div class="user">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </div>
+            </div>
+               
+            
+            
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">40</div>
+                        <div class="cardName">Nhân sự</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">4</div>
+                        <div class="cardName">Phòng ban</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="server-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">10</div>
+                        <div class="cardName">Dự án</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="reader-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">2</div>
+                        <div class="cardName">Thông báo</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="mail-unread-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="details">
+                <div class="recentOders">
+                    <div class="cardHeader">
+                        <h2>Các dự án gần đây</h2>
+                        <a href="#" class="btn">Xem tất cả</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Tên dự án</td>
+                                <td>Giá thành</td>
+                                <td>Thanh toán</td>
+                                <td>Tiến độ</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>web tin tức</td>
+                                <td>$100</td>
+                                <td>Xong</td>
+                                <td><span class="status">Đã hoàn thành</span></td>
+                            </tr>
+                            <tr>
+                                <td>web bán giày dép online</td>
+                                <td>$200</td>
+                                <td>Đã cọc 50%</td>
+                                <td><span class="status">Đã hoàn thành</span></td>
+                            </tr>
+                            <tr>
+                                <td>web blog</td>
+                                <td>$75</td>
+                                <td>Xong</td>
+                                <td><span class="status">Đã hoàn thành</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="recentMail">
+                    <div class="cardHeader">
+                        <h2>Thông báo gần đây</h2>
+                    </div>                                            
+                    <div class="mail">
+                        <span class="mail-time">27/02/2022</span><span> Kiểm tra F0, F1 nhân sự</span>
+                        <p>- Lên kế hoạch, kiểm tra tình trạng sức khỏe của toàn thể nhân viên <br>
+                            - F0 cách ly tại nhà, F1 kiểm tra sức khỏe trong vòng 3 ngày, test nhanh âm tính đi làm lại bình trường. </p>    
+                    </div>                                                                                                                                                      
+                    <div class="mail">
+                        <span class="mail-time">25/02/2023</span><span> Dự án web nhúng AI</span>
+                        <p>- Triển khai, lên kế hoạch gặp khách hàng, phân bố nhân sự.</p>
+                    </div>                                 
+                </div>               
+            </div>                   
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="main.js">
+
+    </script>
+
+    
+
+</body>
+</html>
