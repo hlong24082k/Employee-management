@@ -191,7 +191,7 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 30px;
-    top: 100px;
+    top: 80px;
     transition: 0.5s;
   }
   .cardBox.hd{
@@ -222,10 +222,11 @@
     font-size: 3.5em;
     color: var(--black2);
   }
-  .cardBox .card:hover{
+  .cardBox .card:hover, .cardBox .card.cardhd{
     background: var(--blue);
   }
-  .cardBox .card:hover .numbers,.cardBox .card:hover .cardName, .cardBox .card:hover .iconBox{
+  .cardBox .card:hover .numbers,.cardBox .card:hover .cardName, .cardBox .card:hover .iconBox,
+  .cardBox .card.cardhd .numbers,.cardBox .card.cardhd .cardName, .cardBox .card.cardhd .iconBox{
     color: var(--white);
   }
   
@@ -235,11 +236,9 @@
     width: 100%;
     padding: 20px;
     margin-top: 10px;
-    
-  }
-  #display1, #display2, #display3,#display4{
     display: none;
   }
+  
   
   .details .recentOders{
     position: relative;

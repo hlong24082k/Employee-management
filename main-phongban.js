@@ -8,13 +8,37 @@ toggle.onclick = function(){
 }
 
 //
-let card = document.querySelector('.card');
+
 let cardBox = document.querySelector('.cardBox')
 cardBox.onclick = function(){
     cardBox.classList.add('hd');
 }
+
+
+//
+let card = document.querySelectorAll('.card');
+let btn = document.querySelectorAll('.btn');
+function activeLink(){
+    card.forEach((item)=>
+    item.classList.remove('cardhd'));
+    this.classList.add('cardhd');
+}
+
+function removeLink(){
+    card.forEach((item)=>
+    item.classList.remove('cardhd'));
+}
+
+card.forEach((item)=>
+item.addEventListener('click',activeLink));
+
+btn.forEach((item) =>
+item.addEventListener('click',removeLink));
+
+
 //
 document.getElementById("infor1").onclick = function(){
+    
     document.getElementById("display1").style.display = "block";
     document.getElementById("display2").style.display = "none";
     document.getElementById("display3").style.display = "none";

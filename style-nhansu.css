@@ -200,11 +200,18 @@
     border-radius: 20px;
   }
   .cardHeader{
-    display: flex;  
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
   .cardHeader h2{
     font-weight: 600;
     color: var(--blue);
+  }
+  .cardHeader ion-icon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
   }
   .details table{
     width: 100%;
@@ -214,6 +221,10 @@
   .details table thead td{
     font-weight: 600;
   }
+  #infor{
+    cursor: pointer;
+  }
+
   .details .recentOders table tr{
     color: var(--black1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -228,6 +239,45 @@
   .details .recentOders table tr td{
     padding: 10px;
   }
+
+  .details2.active .recentOders2{
+    width: 65%;
+  }
+  .recentOders2{
+    width: 80%;
+  }
+  .details .cardBody{
+    display: flex;
+    margin-top: 20px;
+  }
+  .details .cardBody-image{
+    width: 110px;
+  }
+  .cardBody-image img{
+    width: 100%;
+  }
+  .cardBody-infor {
+    margin-left: 50px;
+  }
+  
+  .cardBody .table-canhan{
+    margin-top: 0;
+  }
+  .cardBody .table-canhan tr{
+    border-bottom: none;
+  }
+
+  .cardBody .table-canhan tr #button-save{
+    position: relative;
+    left: 50%;
+    padding: 0;
+  }
+  .cardBody .table-canhan tr #button-save button{
+    height: 30px;
+    width: 90px;
+  }
+
+
   
 /*display*/
 
